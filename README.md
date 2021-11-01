@@ -6,50 +6,50 @@ The team will be organized as follows: The product owner will be Andy Phillips. 
 The idea is to have a working, stylized proof-of-concept to present by the end of the semester. We plan to have a fully working feature to present at the end of each sprint and the overarching goal is to build a useful tool that will potentially be used by the millions of users that use Lichess every month. 
 
 ## Installation
-NOTE: These instructions are for WINDOWS ONLY. Reach out to Andy if you are using a different OS so I can make time to slap you the next time I see you.
+NOTE: These instructions are for WINDOWS ONLY. Reach out to Andy if you are using a different OS so I can make time to slap you the next time I see you.  
 
-Download Docker for Windows the following link and install:
-https://docs.docker.com/get-docker/
-	-You can use the Docker GUI to stop and start the Lichess container that you'll setup. 
-
-Navigate to this repo and clone it: 
-https://github.com/benediktwerner/lichess-docker
-	-Open a terminal and cd to the location of your newly cloned lichess-docker repo 
-	-Open Dockerfile in a text editor and:   
-		1. Add the following lines JUST BELOW "# nvm => node => yarn":
+Download Docker for Windows the following link and install:  
+https://docs.docker.com/get-docker/  
+	-You can use the Docker GUI to stop and start the Lichess container that you'll setup.   
+  
+Navigate to this repo and clone it:  
+https://github.com/benediktwerner/lichess-docker  
+	-Open a terminal and cd to the location of your newly cloned lichess-docker repo  
+	-Open Dockerfile in a text editor and:    
+		1. Add the following lines JUST BELOW "# nvm => node => yarn":  
 			RUN sudo apt-get install dos2unix \\  
 			  && sudo dos2unix /home/lichess/build/sdkman-init.sh \\  
 			  && sudo dos2unix /home/lichess/build/nvm-install.sh  
 		2. Add the following line JUST BELOW "ADD run.sh /home/lichess/run.sh"   
 			RUN sudo dos2unix /home/lichess/run.sh  
-
-In your terminal, run the following command INCLUDING the period after a space:
-	docker build --tag lichess .
-
-Clone the following two repos to the same directory (e.g. C:/Users/Andy/Documents/Github):
-	https://github.com/ornicar/lila
-	https://github.com/ornicar/lila-ws
-	
-	
-Edit the following command to use the directory that houses both repos from the previous step and run it in your terminal:
-docker run --mount type=bind,source=YOUR:/PATH/HERE/,target=/home/lichess/projects --publish 9663:9663 --publish 9664:9664 --publish 8212:8212 --name lichess --interactive --tty lichess
-
-Your terminal path should now look something like this: 
-	lichess@88f4ab9da926:
-	
-That is what your terminal will look like as you start up the application locally (from your Docker container)
-
-Now, in your terminal, run the following script to create your DB indices:
-	mongo lichess bin/mongodb/indexes.js
-
-Next, run the following series of commands:
-	cd projects/lila
-	sudo dos2unix lila
-	cd ui
-	sudo dos2unix build
-
-So far this has all been one-time setup stuff. FYou can use the following command to get back into your lichess Docker container in the command line at anytime:
-	docker exec -it lichess bash
+  
+In your terminal, run the following command INCLUDING the period after a space:  
+	docker build --tag lichess .  
+  
+Clone the following two repos to the same directory (e.g. C:/Users/Andy/Documents/Github):  
+	https://github.com/ornicar/lila  
+	https://github.com/ornicar/lila-ws  
+	   
+	  
+Edit the following command to use the directory that houses both repos from the previous step and run it in your terminal:  
+docker run --mount type=bind,source=YOUR:/PATH/HERE/,target=/home/lichess/projects --publish 9663:9663 --publish 9664:9664 --publish 8212:8212 --name lichess --interactive --tty lichess  
+  
+Your terminal path should now look something like this:   
+	lichess@88f4ab9da926:  
+	  
+That is what your terminal will look like as you start up the application locally (from your Docker container)  
+  
+Now, in your terminal, run the following script to create your DB indices:  
+	mongo lichess bin/mongodb/indexes.js  
+  
+Next, run the following series of commands:  
+	cd projects/lila  
+	sudo dos2unix lila  
+	cd ui  
+	sudo dos2unix build  
+  
+So far this has all been one-time setup stuff. FYou can use the following command to get back into your lichess Docker container in the command line at anytime:  
+	docker exec -it lichess bash  
 	
 ## Building
 Luckily, building and compiling is MUCH simpler than the installation process. All you have to do is get into your docker in the terminal (docker exec -it lichess bash) and run the following commands:
