@@ -15,13 +15,13 @@ https://docs.docker.com/get-docker/
 Navigate to this repo and clone it: 
 https://github.com/benediktwerner/lichess-docker
 	-Open a terminal and cd to the location of your newly cloned lichess-docker repo 
-	-Open Dockerfile in a text editor and: 
+	-Open Dockerfile in a text editor and:   
 		1. Add the following lines JUST BELOW "# nvm => node => yarn":
-			RUN sudo apt-get install dos2unix \
-			  && sudo dos2unix /home/lichess/build/sdkman-init.sh \
-			  && sudo dos2unix /home/lichess/build/nvm-install.sh
-		2. Add the following line JUST BELOW "ADD run.sh /home/lichess/run.sh" 
-			RUN sudo dos2unix /home/lichess/run.sh
+			RUN sudo apt-get install dos2unix \\  
+			  && sudo dos2unix /home/lichess/build/sdkman-init.sh \\  
+			  && sudo dos2unix /home/lichess/build/nvm-install.sh  
+		2. Add the following line JUST BELOW "ADD run.sh /home/lichess/run.sh"   
+			RUN sudo dos2unix /home/lichess/run.sh  
 
 In your terminal, run the following command INCLUDING the period after a space:
 	docker build --tag lichess .
