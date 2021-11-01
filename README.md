@@ -10,7 +10,8 @@ NOTE: These instructions are for WINDOWS ONLY. Reach out to Andy if you are usin
 
 Download Docker for Windows the following link and install:  
 https://docs.docker.com/get-docker/  
-	-You can use the Docker GUI to stop and start the Lichess container that you'll setup.   
+	-You can use the Docker GUI to stop and start the Lichess container that you'll setup. 
+Create an Docker account, and log into it in the Docker Application.
   
 Navigate to this repo and clone it:  
 https://github.com/benediktwerner/lichess-docker  
