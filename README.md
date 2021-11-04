@@ -77,16 +77,22 @@ Unlike most other chess analysis tools, the LMBAT allows you to step through mul
 
 ## Personas
 
-Chess Coach (30 years old, high rated, paid to coach less experienced players)
+#### Chess Coach (30 years old, high rated, paid to coach less experienced players)
 
 
-Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
+#### Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
 
 
-Chess Professional (28 years old, plays professionally, needs to examine his opponents opening habits for an upcoming match)
+#### Chess Professional (30 years old, plays professionally, needs to examine his opponents opening habits for an upcoming match)
+Magnus Carlsen is the current World Chess Champion and has been #1 ranked player in the world for over 10 years. In his upcoming World Chess Championship match against Ian Nepomniachtchi or just Nepo, he has been preparing for his matches and developing chess ideas not for himself but analyzing his oppononent's games as well. Magnus Carlsen wants to examine his previous games against Ian and wants to analyze his previous games against Ian in terms of what could have been done differently compared to what actually took place in the games. Using the Multi-Board-Analysis-Tool will allow Magnus to think of multiple variations of the game at the same time and this would allow him to save time in terms of his preparation. While it is common for a chess professional to be able to think multiple moves ahead in the future, having a multiple-board will allow Magus to develop more ideas and defend his title better. 
 
 
-Chess Lecturer (45 years old, retired ex-pro, gives lectures at a local chess club, wants to present various openings with small deviations)
+#### Chess Lecturer (45+ years old, retired ex-pro, gives lectures at a local chess club, wants to present various openings with small deviations)
+
+Yasser Seirawan is a legendary chess grandmaster and lecturer who often gives talks at the St. Louis Chess Club. A typical chess lecture involves a game board projected onto the screen and an instructive verbal analysis of that game is provided by the lecturer. Yasser has an idea for a lecture that involves comparing the Najdorf Sicilians of Maxime Vachier-Lagrave and Magnus Carlsen but this would require having multiple game boards open in multiple browser windows and stepping through each game individually. This is a tedious process for someone who is simultaneously trying to teach a full classroom the intricacies of the games. Using the Multi-Board Analysis Tool, Yasser is able to show four boards on the same screen: 2 of Maxime's games and 2 of Magnus's. He can step through every game at the same time while making his points about their unique deviations. 
+
+## Weekly Update Documents 
+	* Week 1: [Week1.md](https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md)
 
 ## Updated Proposal
 
