@@ -90,6 +90,9 @@ Magnus Carlsen is the current World Chess Champion and has been #1 ranked player
 
 Yasser Seirawan is a legendary chess grandmaster and lecturer who often gives talks at the St. Louis Chess Club. A typical chess lecture involves a game board projected onto the screen and an instructive verbal analysis of that game is provided by the lecturer. Yasser has an idea for a lecture that involves comparing the Najdorf Sicilians of Maxime Vachier-Lagrave and Magnus Carlsen but this would require having multiple game boards open in multiple browser windows and stepping through each game individually. This is a tedious process for someone who is simultaneously trying to teach a full classroom the intricacies of the games. Using the Multi-Board Analysis Tool, Yasser is able to show four boards on the same screen: 2 of Maxime's games and 2 of Magnus's. He can step through every game at the same time while making his points about their unique deviations. 
 
+## Weekly Update Documents 
+	* Week 1: [Week1.md](https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md)
+
 ## Updated Proposal
 
 ### Project Abstract
