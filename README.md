@@ -76,16 +76,18 @@ Unlike most other chess analysis tools, the LMBAT allows you to step through mul
 
 ## Personas
 
-Chess Coach (30 years old, high rated, paid to coach less experienced players)
+####Chess Coach (30 years old, high rated, paid to coach less experienced players)
 
 
-Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
+####Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
 
 
-Chess Professional (28 years old, plays professionally, needs to examine his opponents opening habits for an upcoming match)
+####Chess Professional (28 years old, plays professionally, needs to examine his opponents opening habits for an upcoming match)
 
 
-Chess Lecturer (45 years old, retired ex-pro, gives lectures at a local chess club, wants to present various openings with small deviations)
+####Chess Lecturer (45+ years old, retired ex-pro, gives lectures at a local chess club, wants to present various openings with small deviations)
+
+Yasser Seirawan is a legendary chess grandmaster and lecturer who often gives talks at the St. Louis Chess Club. A typical chess lecture involves a game board projected onto the screen and an instructive verbal analysis of that game is provided by the lecturer. Yasser has an idea for a lecture that involves comparing the Najdorf Sicilians of Maxime Vachier-Lagrave and Magnus Carlsen but this would require having multiple game boards open in multiple browser windows and stepping through each game individually. This is a tedious process for someone who is simultaneously trying to teach a full classroom the intricacies of the games. Using the Multi-Board Analysis Tool, Yasser is able to show four boards on the same screen: 2 of Maxime's games and 2 of Magnus's. He can step through every game at the same time while making his points about their unique deviations. 
 
 ## Updated Proposal
 
