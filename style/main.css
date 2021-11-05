@@ -2,6 +2,12 @@
 	margin: auto;
 }
 
+#boards {
+		display: flex;
+		padding: 1rem;
+	
+}
+
 #header {
 	margin: auto;
 }
