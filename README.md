@@ -5,6 +5,9 @@ The team will be organized as follows: The product owner will be Andy Phillips. 
 
 The idea is to have a working, stylized proof-of-concept to present by the end of the semester. We plan to have a fully working feature to present at the end of each sprint and the overarching goal is to build a useful tool that will potentially be used by the millions of users that use Lichess every month. 
 
+## Weekly Update Documents 
+	Week 1: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md
+
 ## Installation
 NOTE: These instructions are for WINDOWS ONLY. Reach out to Andy if you are using a different OS so I can make time to slap you the next time I see you.  
 
@@ -94,9 +97,6 @@ Yasser Seirawan is a legendary chess grandmaster and lecturer who often gives ta
 #### Chess Noob Who Would Like to Improve (19 years old, freshman in college, has played chess his whole life but never learned any moves)
 
 Nairb Nikrud has been playing chess since he was in 2nd grade. Almsost every day in his Gifted class, he would play against the other three kids in his class. He has always enjoyed a casual game of chess and has found it to be a fun and simple challenge for the brain. During high school, he stopped playing as much due to a heavy courseload. He just started his freshman year of college, which is very new to him obviously. Instead of going out to frat parties on the weekends, he has found that he likes to stay in with a couple of his new friends and play some chess against them. The one problem is: he gets stomped in every game. His friends were all members of the chess club in high school, so they know just about every move there is to know. He had no idea there were even moves in chess. Nairb's competitive nature does not allow him to quit, so instead he is determined to learn chess moves to compete with his friends. Our website will allow him to play a more competitive match with his friends.
-
-## Weekly Update Documents 
-	Week 1: [Week1.md](https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md)
 
 ## Updated Proposal
 
