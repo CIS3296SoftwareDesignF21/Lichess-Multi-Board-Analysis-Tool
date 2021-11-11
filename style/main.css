@@ -1,5 +1,39 @@
 #content {
 	margin: auto;
+	background-color: blanchedalmond;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: pirulen, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#username {
+	background-color: blanchedalmond;
+	border: none;
+	border-bottom: 2px solid black;
+	border-radius: 3px;
+}
+
+#button1 {
+	background-color: blanchedalmond;
+	border-radius: 8px;
+	border: 2px solid black;
+	transition-duration: 0.4s;
+	font-family: pirulen, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+#button1:hover {
+	background-color: black;
+	color: blanchedalmond;
+}
+
+#board {
+	margin: auto;
+	text-align: center;
 }
 
 #header {
