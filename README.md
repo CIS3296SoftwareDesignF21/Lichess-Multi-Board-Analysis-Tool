@@ -9,7 +9,8 @@ The idea is to have a working, stylized proof-of-concept to present by the end o
 	Week 1: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md
 
 ## Installation & Building
-As far as installation and building go, we have it pretty simple for our project. Since we're developing a simple web application from scratch, all you need to do to install and run the application is clone the repo to your local machine and open the files in your browser. That's it!
+As far as installation and building go, we have it pretty simple for our project. Since we're developing a simple web application from scratch, all you need to do to install and run the application is clone the repo to your local machine and open the files in your browser. That's it! 
+
 
 ## Product Vision
 
