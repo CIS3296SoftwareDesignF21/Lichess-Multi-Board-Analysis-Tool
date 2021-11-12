@@ -4,6 +4,7 @@
 <title>Lichess Multi-Board Analysis</title>
 <link rel="stylesheet" href="style/main.css">
 <script src="lib/pgn_viewer/pgnv.js" type="text/javascript" ></script>
+<script src="lib/search/searchMain.js" type="text/javascript" ></script>
 </head>
 
 <body>
@@ -13,19 +14,7 @@
 	</div>
 	
 	<div id="search">
-<<<<<<< Updated upstream
-		<form action="">
-			<label for="username">Username:</label>
-			<input id="username" name="username">
-			<input type="submit" value="Search" id="button1">
-		</form>
-=======
-		<label for="username">Username:</label>
-		<input id="username" name="username">
-		<button id="button1" onclick="getUserGames()">Submit</button>
-		
-		
-		<div id=colorDropdown>
+		<div id="colorDropdown">
 			<label for="color" id="color">Color:</label>
 			<select name="colors" id="color">
 				<option value="black">Black</option>
@@ -37,8 +26,10 @@
 			<label for="numOfGames">Number of Games:</label>
 			<input id="numOfGamesValue" name="numOfGames"></input>
 		</div>
-		
->>>>>>> Stashed changes
+
+		<label for="username">Username:</label>
+		<input id="username" name="username">
+		<button id="button1" onclick="getUserGames()">Submit</button>
 	</div>
 	
 	<div id="board"></div>

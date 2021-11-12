@@ -5,68 +5,12 @@ The team will be organized as follows: The product owner will be Andy Phillips. 
 
 The idea is to have a working, stylized proof-of-concept to present by the end of the semester. We plan to have a fully working feature to present at the end of each sprint and the overarching goal is to build a useful tool that will potentially be used by the millions of users that use Lichess every month. 
 
-## Installation
-NOTE: These instructions are for WINDOWS ONLY. Reach out to Andy if you are using a different OS so I can make time to slap you the next time I see you.  
+## Weekly Update Documents 
+	Week 1: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md
 
-Download Docker for Windows the following link and install:  
-https://docs.docker.com/get-docker/  
-	-You can use the Docker GUI to stop and start the Lichess container that you'll setup. 
-Create an Docker account, and log into it in the Docker Application.
-  
-Navigate to this repo and clone it:  
-https://github.com/benediktwerner/lichess-docker  
-	-Open a terminal and cd to the location of your newly cloned lichess-docker repo  
-	-Open Dockerfile in a text editor and:    
-		1. Add the following lines JUST BELOW "# nvm => node => yarn":  
-			RUN sudo apt-get install dos2unix \\  
-			  && sudo dos2unix /home/lichess/build/sdkman-init.sh \\  
-			  && sudo dos2unix /home/lichess/build/nvm-install.sh  
-		2. Add the following line JUST BELOW "ADD run.sh /home/lichess/run.sh"   
-			RUN sudo dos2unix /home/lichess/run.sh  
-  
-In your terminal, run the following command INCLUDING the period after a space:  
-	docker build --tag lichess .  
-  
-Clone the following two repos to the same directory (e.g. C:/Users/Andy/Documents/Github):  
-	https://github.com/ornicar/lila  
-	https://github.com/ornicar/lila-ws  
-	   
-	  
-Edit the following command to use the directory that houses both repos from the previous step and run it in your terminal:  
-docker run --mount type=bind,source=YOUR:/PATH/HERE/,target=/home/lichess/projects --publish 9663:9663 --publish 9664:9664 --publish 8212:8212 --name lichess --interactive --tty lichess  
-  
-Your terminal path should now look something like this:   
-	lichess@88f4ab9da926:  
-	  
-That is what your terminal will look like as you start up the application locally (from your Docker container)  
-  
-Now, in your terminal, run the following script to create your DB indices:  
-	mongo lichess bin/mongodb/indexes.js  
-  
-Next, run the following series of commands:  
-	cd projects/lila  
-	sudo dos2unix lila  
-	cd ui  
-	sudo dos2unix build  
-  
-So far this has all been one-time setup stuff. FYou can use the following command to get back into your lichess Docker container in the command line at anytime:  
-	docker exec -it lichess bash  
-	
-## Building
-Luckily, building and compiling is MUCH simpler than the installation process. All you have to do is get into your docker in the terminal (docker exec -it lichess bash) and run the following commands:
-	
-	cd projects/lila
-	./ui/build
-	./lila 
-		- This opens the sbt (scala build tool, a command line interface). Once inside, enter "compile" without the quotes to begin compilation. 
+## Installation & Building
+As far as installation and building go, we have it pretty simple for our project. Since we're developing a simple web application from scratch, all you need to do to install and run the application is clone the repo to your local machine and open the files in your browser. That's it! 
 
-At this point, open a second terminal to run lila-ws, the web socket library. To do this, start by entering "docker exec -it lichess bash". Then, navigate to ~projects/lila-ws and enter the following command:
-
-	sbt run
-	
-After lila-ws is successfully running, go back to your first terminal (where the sbt is still running) and type "run" without the quotes. This will fire up your local lichess instance! Now you can go to the following URL to enjoy Lichess locally!! 
-
-	http://localhost:9663/
 
 ## Product Vision
 
@@ -81,22 +25,24 @@ Unlike most other chess analysis tools, the LMBAT allows you to step through mul
 
 
 #### Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
+By Hao Long Li
 Hasbulla Magomedov is a small chess player with very little experience as he has only just started recently. He's been playing chess online with his rival Abdu Rozik and also many random players. Hasbulla loves using the Sicilian defense as it was recommended by his rival, however, he has a very high loss rate with it. So he has decided to use the Lichess Multi-Board Analysis Tool to help him explore all of his games with similar follow-up moves after the opening alongside each other to identify the issues from losing games and also what he did right for winning games.
 
 #### Chess Professional (30 years old, plays professionally, needs to examine his opponents opening habits for an upcoming match)
+By Keshav Saraogi
 Magnus Carlsen is the current World Chess Champion and has been #1 ranked player in the world for over 10 years. In his upcoming World Chess Championship match against Ian Nepomniachtchi or just Nepo, he has been preparing for his matches and developing chess ideas not for himself but analyzing his oppononent's games as well. Magnus Carlsen wants to examine his previous games against Ian and wants to analyze his previous games against Ian in terms of what could have been done differently compared to what actually took place in the games. Using the Multi-Board-Analysis-Tool will allow Magnus to think of multiple variations of the game at the same time and this would allow him to save time in terms of his preparation. While it is common for a chess professional to be able to think multiple moves ahead in the future, having a multiple-board will allow Magus to develop more ideas and defend his title better. 
 
 
 #### Chess Lecturer (45+ years old, retired ex-pro, gives lectures at a local chess club, wants to present various openings with small deviations)
-
+By Andy Phillips
 Yasser Seirawan is a legendary chess grandmaster and lecturer who often gives talks at the St. Louis Chess Club. A typical chess lecture involves a game board projected onto the screen and an instructive verbal analysis of that game is provided by the lecturer. Yasser has an idea for a lecture that involves comparing the Najdorf Sicilians of Maxime Vachier-Lagrave and Magnus Carlsen but this would require having multiple game boards open in multiple browser windows and stepping through each game individually. This is a tedious process for someone who is simultaneously trying to teach a full classroom the intricacies of the games. Using the Multi-Board Analysis Tool, Yasser is able to show four boards on the same screen: 2 of Maxime's games and 2 of Magnus's. He can step through every game at the same time while making his points about their unique deviations. 
 
 #### Chess Noob Who Would Like to Improve (19 years old, freshman in college, has played chess his whole life but never learned any moves)
-
+By Brian Durkin
 Nairb Nikrud has been playing chess since he was in 2nd grade. Almsost every day in his Gifted class, he would play against the other three kids in his class. He has always enjoyed a casual game of chess and has found it to be a fun and simple challenge for the brain. During high school, he stopped playing as much due to a heavy courseload. He just started his freshman year of college, which is very new to him obviously. Instead of going out to frat parties on the weekends, he has found that he likes to stay in with a couple of his new friends and play some chess against them. The one problem is: he gets stomped in every game. His friends were all members of the chess club in high school, so they know just about every move there is to know. He had no idea there were even moves in chess. Nairb's competitive nature does not allow him to quit, so instead he is determined to learn chess moves to compete with his friends. Our website will allow him to play a more competitive match with his friends.
 
-## Weekly Update Documents 
-	Week 1: [Week1.md](https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md)
+## UML Diagram
+![UML](UML.png)
 
 ## Updated Proposal
 
