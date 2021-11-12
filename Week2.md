@@ -10,7 +10,7 @@
 	*Also created UI for the amount of games the API pulls
 	*Updated CSS for new UI to make it look nice
 ### Hao Long Li
-
+	* Created Search UI
 ### Keshav Saraogi
 
 ### Jason Fleshel
