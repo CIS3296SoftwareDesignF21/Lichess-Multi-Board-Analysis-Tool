@@ -7,7 +7,6 @@
 	font-family: pirulen, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	padding: 1%;
 }
 
 #username {
@@ -33,11 +32,30 @@
 }
 
 #board {
-	padding: 1%;
 	margin: auto;
 	text-align: center;
 }
 
 #header {
 	margin: auto;
+}
+
+#colorDropdown{
+	margin: auto;
+	display: block;
+	margin-top: 1%;
+	align-items: center;
+
+}	
+
+#numOfGamesValue{
+	background-color: blanchedalmond;
+	border: none;
+	border-bottom: 2px solid black;
+	border-radius: 3px;
+}
+
+#numOfGames{
+	display: block;
+	margin-top: 1%;
 }
