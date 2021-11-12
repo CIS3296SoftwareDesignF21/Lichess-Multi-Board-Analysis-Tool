@@ -1,7 +1,7 @@
 ## Project Description
 This project involves the contribution of a new chess analysis tool to be used on the open source chess platform Lichess by any and all visitors to the site. The goal is to introduce a tool that allows users to search through any player's games and place them side-by-side on the page, enabling big-picture analysis of their overall game plans in certain situations. Users will be able to sort through the games of their desired players by opening name, piece color, and more. They'll be able to step through the games simultaneously or one-by-one. The tool will be freeform in that each board on the page can be injected with the games of different players, allowing for easy comparison of playstyles between users. We will manage the development in a scrum environment using agile methodologies. 
 
-The team will be organized as follows: The product owner will be Andy Phillips. The development team will consist of Brian Durkin, Hao Long Li, and Keshav Saraogi.
+The team will be organized as follows: The product owner will be Andy Phillips. The development team will consist of Brian Durkin, Hao Long Li, Jason Fleshel and Keshav Saraogi.
 
 The idea is to have a working, stylized proof-of-concept to present by the end of the semester. We plan to have a fully working feature to present at the end of each sprint and the overarching goal is to build a useful tool that will potentially be used by the millions of users that use Lichess every month. 
 
@@ -22,7 +22,8 @@ Unlike most other chess analysis tools, the LMBAT allows you to step through mul
 ## Personas
 
 #### Chess Coach (30 years old, high rated, paid to coach less experienced players)
-
+By Jason Fleshel
+Andy Reid is a chess coach in New York City. He works with inexperienced students of all ages, ranging from teaching young children the basic rules of the game to improving the skills of lifelong players. Andy learned chess at a young age, and honed his skills playing against his grandfather. He has played in numerous competitions, yet has since retired to follow his passion of sharing his knowledge of the game with those who are less experienced. He is interested in using the LMBAT tool to compare different strategies and moves with his students.
 
 #### Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
 By Hao Long Li
@@ -80,3 +81,4 @@ I will lead gladly lead the project - I have 2 years of web dev experience in a 
 
 ### Whiteboard Image
 ![whiteboard](https://user-images.githubusercontent.com/77801012/136469084-9edfe897-fcbd-4409-930f-334d27a4413e.jpg)
+
