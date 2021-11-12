@@ -6,7 +6,8 @@ The team will be organized as follows: The product owner will be Andy Phillips. 
 The idea is to have a working, stylized proof-of-concept to present by the end of the semester. We plan to have a fully working feature to present at the end of each sprint and the overarching goal is to build a useful tool that will potentially be used by the millions of users that use Lichess every month. 
 
 ## Weekly Update Documents 
-	Week 1: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md
+	Week 1: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md  
+	Week 2: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week2.md  
 
 ## Installation & Building
 As far as installation and building go, we have it pretty simple for our project. Since we're developing a simple web application from scratch, all you need to do to install and run the application is clone the repo to your local machine and open the files in your browser. That's it! 
