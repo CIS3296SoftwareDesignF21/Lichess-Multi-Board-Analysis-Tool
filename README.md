@@ -21,7 +21,7 @@ Unlike most other chess analysis tools, the LMBAT allows you to step through mul
 ## Personas
 
 #### Chess Coach (30 years old, high rated, paid to coach less experienced players)
-
+Andy Reid is a chess coach in New York City. He works with inexperienced students of all ages, ranging from teaching young children the basic rules of the game to improving the skills of lifelong players. Andy learned chess at a young age, and honed his skills playing against his grandfather. He has played in numerous competitions, yet has since retired to follow his passion of sharing his knowledge of the game with those who are less experienced. He is interested in using the LMBAT tool to compare different strategies and moves with his students.
 
 #### Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
 Hasbulla Magomedov is a small chess player with very little experience as he has only just started recently. He's been playing chess online with his rival Abdu Rozik and also many random players. Hasbulla loves using the Sicilian defense as it was recommended by his rival, however, he has a very high loss rate with it. So he has decided to use the Lichess Multi-Board Analysis Tool to help him explore all of his games with similar follow-up moves after the opening alongside each other to identify the issues from losing games and also what he did right for winning games.
