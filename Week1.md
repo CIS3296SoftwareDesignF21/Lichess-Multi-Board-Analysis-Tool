@@ -2,7 +2,7 @@
 
 ## Completed Tasks
 
-### Andy
+### Andy Phillips
 	* Create repo
 	* Create README
 	* Create Trello board
@@ -12,8 +12,8 @@
 	* Create product vision
 	* Create Week1.md
 	* Add a persona
-### Brian
+### Brian Durkin
 
-### Li
+### Hao Long Li
 
-### Keshav
+### Keshav Saraogi
