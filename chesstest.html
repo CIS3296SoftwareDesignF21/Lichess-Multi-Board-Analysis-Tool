@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,33 +7,46 @@
 <script src="lib/pgn_viewer/pgnv.js" type="text/javascript" ></script>
 <script src="lib/search/searchMain.js" type="text/javascript" ></script>
 <script src="lib/search/searchResults.js" type="text/javascript" ></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 <div id="content">
-	<div id="header">
-		<h2>Welcome to the Multi-Board Analysis Tool</h2>
-	</div>
-	
-	<div id="search">
-		<div id="colorDropdown">
-			<label for="color" id="color">Color:</label>
-			<select name="colors" id="colors">
-				<option value="black">Black</option>
-				<option value="white">White</option>
-				<option value="both">Both</option>
-			</select>
+	<h2>Welcome to the Multi-Board Analysis Tool</h2>
+	<div class="columns">
+		<div class="column">
+			<div id="colorDropdown">
+				<div class="field">
+					<label class="label" id="color">Color:</label>
+					<div class="control">
+						<select name="colors" id="colors">
+							<option value="black">Black</option>
+							<option value="white">White</option>
+              <option value="both">Both</option>
+						</select>	
+					</div>
+				</div>
+				<div class="field">
+					<div id="numOfGames">
+						<label class="label" for="numOfGames">Number of Games:</label>
+						<div class="control">
+							<input id="numOfGamesValue" name="numOfGames"></input>
+						</div>
+					</div>		
+				</div>
+				<div class="field">
+					<label class="label" for="username">Username:</label>
+					<div class="control">
+						<input id="username" name="username">
+					</div>
+					<button class="button" id="button1" onclick="getUserGames()">Submit</button>		
+				</div>
+			</div>	
 		</div>
-
-		<div id="numOfGames">
-			<label for="numOfGames">Number of Games:</label>
-			<input id="numOfGamesValue" name="numOfGames"></input>
+		<div class="column">
+			<div id="searchResults"></div>
 		</div>
-
-		<label for="username">Username:</label>
-		<input id="username" name="username">
-		<button id="button1" onclick="getUserGames()">Submit</button>
-  <div id="searchResults"></div>
 	</div>
 	
 	<div id="board"></div>
