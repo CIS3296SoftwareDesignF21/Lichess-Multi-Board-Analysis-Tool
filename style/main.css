@@ -59,3 +59,10 @@
 	display: block;
 	margin-top: 1%;
 }
+
+#opening{
+	background-color: blanchedalmond;
+	border: none;
+	border-bottom: 2px solid black;
+	border-radius: 3px;
+}
