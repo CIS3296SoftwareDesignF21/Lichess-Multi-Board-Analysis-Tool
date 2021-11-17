@@ -44,7 +44,13 @@ By Brian Durkin
 Nairb Nikrud has been playing chess since he was in 2nd grade. Almsost every day in his Gifted class, he would play against the other three kids in his class. He has always enjoyed a casual game of chess and has found it to be a fun and simple challenge for the brain. During high school, he stopped playing as much due to a heavy courseload. He just started his freshman year of college, which is very new to him obviously. Instead of going out to frat parties on the weekends, he has found that he likes to stay in with a couple of his new friends and play some chess against them. The one problem is: he gets stomped in every game. His friends were all members of the chess club in high school, so they know just about every move there is to know. He had no idea there were even moves in chess. Nairb's competitive nature does not allow him to quit, so instead he is determined to learn chess moves to compete with his friends. Our website will allow him to play a more competitive match with his friends.
 
 ## UML Diagram
+The main page initializes the application by displaying the search panel and search functionality. It does so using the SearchHandler. By capturing user input from the search filter, the search handler is able to build and send a request to the Lichess API where we get all of our user game data. Once the search results are returned, each individual result presents a button to add the game to the GameBoardPanel. The GameBoardPanel houses all the game board organization functions. 
 ![UML](UML.png)
+
+## Sequence Diagram 
+The board management diagram contains the board addition and subtraction functionalities. The functions create or remove boardDivs which are added to or removed from the boardPanelDiv.
+![Board Management Sequence Diagram](BoardManagement_SequenceDiagram.png)
+
 
 ## Updated Proposal
 
