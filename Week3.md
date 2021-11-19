@@ -11,7 +11,7 @@
 ### Brian Durkin
 
 ### Hao Long Li
-
+* Add search filter UI "opening" as a search box
 ### Keshav Saraogi
 
 ### Jason Fleshel
