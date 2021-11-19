@@ -15,3 +15,5 @@
 ### Keshav Saraogi
 
 ### Jason Fleshel
+* Wrote function to create board
+* Modified table to add button for board

@@ -14,3 +14,4 @@
 ### Keshav Saraogi
 
 ### Jason Fleshel
+	* Added responsive CSS
