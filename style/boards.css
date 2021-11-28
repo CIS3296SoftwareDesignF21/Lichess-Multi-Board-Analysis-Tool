@@ -6,3 +6,10 @@
 	margin: auto;
 	background-color: #dbcbb4;
 }
+
+#boardControls {
+	margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	display: none;
+}
