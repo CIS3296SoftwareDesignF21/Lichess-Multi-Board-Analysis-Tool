@@ -1,0 +1,8 @@
+#boards {
+	width: 90%;
+	display: flex;
+	flex: 1 0 21%;
+	flex-wrap: wrap;
+	margin: auto;
+	background-color: #dbcbb4;
+}
