@@ -1,7 +1,7 @@
 ## Project Description
 This project involves the contribution of a new chess analysis tool to be used on the open source chess platform Lichess by any and all visitors to the site. The goal is to introduce a tool that allows users to search through any player's games and place them side-by-side on the page, enabling big-picture analysis of their overall game plans in certain situations. Users will be able to sort through the games of their desired players by opening name, piece color, and more. They'll be able to step through the games simultaneously or one-by-one. The tool will be freeform in that each board on the page can be injected with the games of different players, allowing for easy comparison of playstyles between users. We will manage the development in a scrum environment using agile methodologies. 
 
-The team will be organized as follows: The product owner will be Andy Phillips. The development team will consist of Brian Durkin, Hao Long Li, Jason Fleshel and Keshav Saraogi.
+The team will be organized as follows: The product owner will be Andy Phillips. The development team will consist of Brian Durkin, Hao Long Li, Jason Fleshel.
 
 The idea is to have a working, stylized proof-of-concept to present by the end of the semester. We plan to have a fully working feature to present at the end of each sprint and the overarching goal is to build a useful tool that will potentially be used by the millions of users that use Lichess every month. 
 
@@ -9,6 +9,7 @@ The idea is to have a working, stylized proof-of-concept to present by the end o
 	Week 1: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week1.md  
 	Week 2: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week2.md  
 	Week 3: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week3.md  
+	Week 4: https://github.com/tuc56407/Lichess-Multi-Board-Analysis-Tool/blob/develop/Week4.md  
 
 ## Installation & Building
 As far as installation and building go, we have it pretty simple for our project. Since we're developing a simple web application from scratch, all you need to do to install and run the application is clone the repo to your local machine and open the files in your browser. That's it! 
@@ -30,11 +31,6 @@ Andy Reid is a chess coach in New York City. He works with inexperienced student
 #### Adult Chess Amateur (22 years old, only plays online, wonders why he always loses with a certain opening)
 By Hao Long Li  
 Hasbulla Magomedov is a small chess player with very little experience as he has only just started recently. He's been playing chess online with his rival Abdu Rozik and also many random players. Hasbulla loves using the Sicilian defense as it was recommended by his rival, however, he has a very high loss rate with it. So he has decided to use the Lichess Multi-Board Analysis Tool to help him explore all of his games with similar follow-up moves after the opening alongside each other to identify the issues from losing games and also what he did right for winning games.
-
-#### Chess Professional (30 years old, plays professionally, needs to examine his opponents opening habits for an upcoming match)
-By Keshav Saraogi  
-Magnus Carlsen is the current World Chess Champion and has been #1 ranked player in the world for over 10 years. In his upcoming World Chess Championship match against Ian Nepomniachtchi or just Nepo, he has been preparing for his matches and developing chess ideas not for himself but analyzing his oppononent's games as well. Magnus Carlsen wants to examine his previous games against Ian and wants to analyze his previous games against Ian in terms of what could have been done differently compared to what actually took place in the games. Using the Multi-Board-Analysis-Tool will allow Magnus to think of multiple variations of the game at the same time and this would allow him to save time in terms of his preparation. While it is common for a chess professional to be able to think multiple moves ahead in the future, having a multiple-board will allow Magus to develop more ideas and defend his title better. 
-
 
 #### Chess Lecturer (45+ years old, retired ex-pro, gives lectures at a local chess club, wants to present various openings with small deviations)
 By Andy Phillips  
