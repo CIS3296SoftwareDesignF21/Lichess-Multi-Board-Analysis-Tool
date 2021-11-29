@@ -1,28 +1,86 @@
+<!DOCTYPE html>
 <html>
 
 <head>
 <title>Lichess Multi-Board Analysis</title>
 <link rel="stylesheet" href="style/main.css">
+<link rel="stylesheet" href="style/boards.css">
+
 <script src="lib/pgn_viewer/pgnv.js" type="text/javascript" ></script>
+<script src="lib/board_controls/boardControls.js" type="text/javascript" ></script>
 <script src="lib/search/searchMain.js" type="text/javascript" ></script>
+<script src="lib/search/searchResults.js" type="text/javascript" ></script>
+<script src="lib/utils/autoComplete.js" type="text/javascript" ></script>
+<script src="lib/search/createBoard.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<!--stylesheet for dropdown arrow-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<div id="content">
-	<div id="header">
-		<h2>Welcome to the Multi-Board Analysis Tool</h2>
+<div id="content" >
+	<h2 class="title is-3 m-3" id="header1">Welcome to the Multi-Board Analysis Tool</h2>
+	<div class="columns is-centered">
+		<div class="column m-5 is-align-self-center">
+			<div id="colorDropdown">
+				<div class="field">
+					<label class="label" id="color">Color:</label>
+					<div class="select">
+						<select name="colors" id="colors">
+						  	<option value="both">Both</option>
+						  	<option value="black">Black</option>
+						  	<option value="white">White</option>
+						</select>
+					</div>
+				</div>
+				<div class="field">
+					<div id="numOfGames">
+						<label class="label" id="nOG1" for="numOfGames">Number of Games:</label>
+						<div class="control">
+							<input id="numOfGamesValue" name="numOfGames"></input>
+						</div>
+					</div>		
+				</div>
+ 					<div class="field">
+					<label class="label" id="o1" for="opening">Opening:</label>
+                        <div class="control">
+                            <input id="opening" type="text" name="opening" placeholder="Opening" list="openingArchives">
+                            <datalist id="openingArchives"></datalist>
+                        </div>    		
+				</div>  
+				<div class="field">
+					<label class="label" id="u1" for="username">Username:</label>
+					<div class="control">
+						<input id="username" name="username">
+					</div>
+					<button class="button" id="submitButton" onclick="getUserGames()">Submit</button>
+					<b><p id="loadingText" style="visibility:hidden">Loading games...</p></b>
+				</div>
+			</div>	
+		</div>
+		<div class="column">
+			<div id="searchResults"></div>
+		</div>
 	</div>
 	
-	<div id="search">
-		<label for="username">Username:</label>
-		<input id="username" name="username">
-		<button id="button1" onclick="getUserGames()">Submit</button>
+	<div id="boardControls">
+		<button id="flipAllBtn" onclick="flipAllBoards()" class="button">Flip All</button>
+		<button id="firstAllBtn" onclick="firstAllBoards()" class="button">First</button>
+		<button id="backAllBtn" onclick="backAllBoards()" class="button">Back</button>
+		<button id="nextAllBtn" onclick="nextAllBoards()" class="button">Next</button>
+		<button id="lastAllBtn" onclick="lastAllBoards()" class="button">Last</button>
 	</div>
+	<div id="boards" class="columns is-centered m-4" ></div>
+
 	
-	<div id="board"></div>
-	
+	</div>
 	<script>
-	PGNV.pgnView('board',{ pgn: '1. d4 e6 2. c4 Nc6 3. Nc3 b6 4. a3 Nf6 5. Nf3 d5 6. e3 dxc4 7. Bxc4 h5 8. O-O Bb7 9. Re1 a6 10. b4 Bd6 11. e4 h4 12. h3 O-O 13. e5 Nd5 14. Nxd5 Be7 15. Nxe7+ Kh8 16. Bg5 Qb8 17. d5 Nxe7 18. Bxe7 exd5 19. Bxd5 Rc8 20. Ng5 g6 21. Nxf7+ Kg8 22. Ng5+ Kh8 23. Be6 a5 24. Nf7+ Kg8 25. Qg4 Be4 26. Qxe4 b5 27. Qxg6# { White wins by checkmate. } 1-0', pieceStyle: 'merida' });
+		document.getElementById("boardControls").style.visiblity = "hidden";
+        searchResults();
+        autoComplete();
+		window.nboards = 1;
 	</script>
 </div> <!-- end content -->
 </body>

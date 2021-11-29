@@ -13,7 +13,9 @@
 	* Create Week1.md
 	* Add a persona
 ### Brian Durkin
-
+	*Updated some basic CSS to make the website look nicer
+	*Set up local repo
+	*Added persona to the README
 ### Hao Long Li
 
 ### Keshav Saraogi
