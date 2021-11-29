@@ -1,0 +1,32 @@
+#boards {
+	width: 90%;
+	display: flex;
+	flex: 1 0 21%;
+	flex-wrap: wrap;
+	margin: auto;
+	background-color: aqua;
+}
+
+#boardControls {
+	margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	display: none;
+}
+
+#searchResults{
+	color:black;
+	background-color: aqua;
+	margin: 2%;
+	border: 2px solid black;
+	border-radius: 20px;
+
+}
+
+#addButton{
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	border: 2px solid black;
+	margin: 2%;
+}
