@@ -4,30 +4,44 @@
 	margin-right: auto;
 	text-align: center;
 	position: absolute;
+	background-color: black;
+	color: aqua;
+}
+
+#colors {
+	border-radius: 8px;
+	border: 2px solid black;
+	background-color: aqua;
+	color: black;
 }
 
 #username {
 	border: none;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid aqua;
 	border-radius: 3px;
+	background-color: black;
+	margin-bottom: 8%;
+	color: aqua;
 }
 
 #button1 {
 	border-radius: 8px;
 	border: 2px solid black;
 	transition-duration: 0.4s;
-	font-family: pirulen, sans-serif;
-	font-weight: 200;
-	font-style: normal;
 }
 
-#button1:hover {
-	background-color: black;
+#submitButton{
+	border-radius: 8px;
+	border: 2px solid black;
+	background-color: aqua;
+	color: black;
+	transition-duration: 0.4s;
 }
 
 #board {
 	margin: auto;
 	text-align: center;
+	background-color: black;
 }
 
 #header {
@@ -36,8 +50,10 @@
 
 #numOfGamesValue{
 	border: none;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid aqua;
 	border-radius: 3px;
+	background-color: black;
+	color: aqua;
 }
 
 #numOfGames{
@@ -47,6 +63,24 @@
 
 #opening{
 	border: none;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid aqua;
 	border-radius: 3px;
+	background-color: black;
+	color: aqua;
+}
+
+#header1{
+	color: aqua;
+	font-family: Verdana,Geneva,sans-serif;
+	margin: 20%;
+}
+
+#u1{color: aqua;}
+#o1{color: aqua;}
+#nOG1{color: aqua;}
+#color{color: aqua;}
+
+#searchResults{
+	color:aqua;
+	background-color: black;
 }
