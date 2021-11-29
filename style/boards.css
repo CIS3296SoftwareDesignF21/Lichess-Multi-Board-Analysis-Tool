@@ -7,6 +7,10 @@
 	background-color: aqua;
 	border-radius: 20px;
 }
+#boardWhole{
+	margin-left:auto;	
+	margin-right:auto;
+}
 
 #boardControls {
 	margin: auto;
@@ -22,7 +26,6 @@
 	margin: 2%;
 	border: 2px solid black;
 	border-radius: 20px;
-
 }
 
 #addButton{
@@ -38,7 +41,6 @@
 	color: aqua;
 	border-radius: 5px;
 	margin-top: 4%;
-	margin-right: 10%;
 }
 
 #flipAllBtn{
@@ -74,4 +76,9 @@
 	border: 2px solid black;
 	background-color: aqua;
 	color: black;
+}
+
+#boardInfo{
+	color: black;
+	font-weight: 600;
 }
