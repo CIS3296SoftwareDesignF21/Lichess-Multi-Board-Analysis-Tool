@@ -4,7 +4,8 @@
 	flex: 1 0 21%;
 	flex-wrap: wrap;
 	margin: auto;
-	background-color: #dbcbb4;
+	background-color: aqua;
+	border-radius: 20px;
 }
 
 #boardControls {
@@ -12,4 +13,65 @@
     padding-top: 10px;
     padding-bottom: 10px;
 	display: none;
+	margin-right: 10%;
+}
+
+#searchResults{
+	color:black;
+	background-color: aqua;
+	margin: 2%;
+	border: 2px solid black;
+	border-radius: 20px;
+
+}
+
+#addButton{
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	border: 2px solid black;
+	margin: 2%;
+}
+
+#xButton{
+	background-color: black;
+	color: aqua;
+	border-radius: 5px;
+	margin-top: 4%;
+	margin-right: 10%;
+}
+
+#flipAllBtn{
+	border-radius: 8px;
+	border: 2px solid black;
+	background-color: aqua;
+	color: black;
+}
+
+#firstAllBtn{
+	border-radius: 8px;
+	border: 2px solid black;
+	background-color: aqua;
+	color: black;
+}
+
+#backAllBtn{
+	border-radius: 8px;
+	border: 2px solid black;
+	background-color: aqua;
+	color: black;
+}
+
+#nextAllBtn{
+	border-radius: 8px;
+	border: 2px solid black;
+	background-color: aqua;
+	color: black;
+}
+
+#lastAllBtn{
+	border-radius: 8px;
+	border: 2px solid black;
+	background-color: aqua;
+	color: black;
 }
