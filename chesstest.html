@@ -12,6 +12,8 @@
 <script src="lib/search/searchResults.js" type="text/javascript" ></script>
 <script src="lib/utils/autoComplete.js" type="text/javascript" ></script>
 <script src="lib/search/createBoard.js" type="text/javascript"></script>
+<script src="lib/utils/viewCustomGame.js" type="text/javascript" ></script>
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 <!--stylesheet for dropdown arrow-->
@@ -57,6 +59,13 @@
 					</div>
 					<button class="button" id="submitButton" onclick="getUserGames()">Submit</button>
 					<b><p id="loadingText" style="visibility:hidden">Loading games...</p></b>
+				</div>
+				<div class="field" id="customGame">
+					<label class="label" id="customGameLabel" for="customGame">Enter a PGN:</label>
+					<textarea name="customGameId" id="customGameId"></textarea>
+					<button class="button" id="customGameBtn" onclick="viewCustomGame()">
+						View Custom Game
+					</button>
 				</div>
 			</div>	
 		</div>
