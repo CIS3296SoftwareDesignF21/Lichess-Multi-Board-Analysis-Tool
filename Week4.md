@@ -11,6 +11,7 @@
 ### Brian Durkin
 
 ### Hao Long Li
-
+* Add ability to remove game from page
+* Update UML Sequence Diagram on readMe
 
 ### Jason Fleshel
