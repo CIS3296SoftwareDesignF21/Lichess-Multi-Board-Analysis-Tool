@@ -48,6 +48,8 @@ The main page initializes the application by displaying the search panel and sea
 The board management diagram contains the board addition and subtraction functionalities. The functions create or remove boardDivs which are added to or removed from the boardPanelDiv.
 ![Board Management Sequence Diagram](BoardManagement_SequenceDiagram.png)
 
+The search sequence diagram displays search functionalities. The user clicks the submit button, searchMain.js's functions retrieves data from the HTML inputs, utilizes them as search requests to the Lichess API, which will return the datas to searchResults.js where it will display returned results to the HTML page. 
+![Search_SequenceDiagram](Search_SequenceDiagram.png)
 
 ## Updated Proposal
 
