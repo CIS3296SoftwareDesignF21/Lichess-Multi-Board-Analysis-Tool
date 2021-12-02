@@ -10,7 +10,7 @@ In order to run this application locally, simply clone the repo and open chesste
 
 ## Useful Links
 This project utilizes the Lichess API found [here](https://lichess.org/api).  
-To contribute to Lichess as a developer, explore [this page](https://lichess.org/help/contribute).
-To learn how to play chess, utilize the Studies functionalities of Lichess [here](https://lichess.org/study).
+To contribute to Lichess as a developer, explore [this page](https://lichess.org/help/contribute).  
+To learn how to play chess, utilize the Studies functionalities of Lichess [here](https://lichess.org/study).  
 
 
