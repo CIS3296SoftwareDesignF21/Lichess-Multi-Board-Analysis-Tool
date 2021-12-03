@@ -15,3 +15,5 @@
 * Update UML Sequence Diagram on readMe
 
 ### Jason Fleshel
+* Updated UML sequence diagrams
+* Added new Powerpoint
