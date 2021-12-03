@@ -9,6 +9,10 @@
 * Update project proposal
 
 ### Brian Durkin
+* Styled search filter and panel
+* Style buttons to parse game
+* Create an Add Board button to paste a custom PGN 
+* Style custom Add Board button and popup
 
 ### Hao Long Li
 * Add ability to remove game from page
